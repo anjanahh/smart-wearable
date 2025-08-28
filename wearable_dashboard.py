@@ -3,8 +3,6 @@
 import streamlit as st
 import sqlite3
 import pandas as pd
-import matplotlib.pyplot as plt
-
 # --- Connect to database ---
 conn = sqlite3.connect("wearable_data.db")
 df = pd.read_sql_query("SELECT * FROM health_data", conn)
